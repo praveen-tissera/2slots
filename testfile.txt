@@ -1,8 +1,0 @@
-this should be up to saranga baranch
-<<<<<<< HEAD
-Hello world!
-hello world praveen
-=======
-Hello world123!
-
->>>>>>> refs/heads/pr/3
