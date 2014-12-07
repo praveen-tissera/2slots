@@ -1,0 +1,78 @@
+2014/12/06 05:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "CourseOne".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('CourseOne')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/CourseOne
+---
+2014/12/06 05:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Course_One".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Course_One')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/Course_One
+---
+2014/12/06 05:51:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/login
+---
+2014/12/06 06:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/index.php')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/index.php
+---
+2014/12/06 06:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ceate".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('ceate')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('ceate')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/ceate')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/ceate
+---
+2014/12/06 07:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/login
+---
+2014/12/06 07:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Course_One".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Course_One')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/Course_One
+---
+2014/12/06 07:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "CourseOne".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('CourseOne')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/CourseOne
+---
+2014/12/06 11:01:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "step".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('step')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('step')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/step')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/step
+---
