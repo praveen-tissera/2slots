@@ -1,6 +1,6 @@
 <?php
 
-class SdlcController extends Controller
+class QuestionsController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,7 +28,7 @@ class SdlcController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','Step1','Step2','Step3','Step4','TaskOne','Question'),
+				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -62,99 +62,19 @@ class SdlcController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Sdlc;
-            //die('hbdcgd ');
+		$model=new Questions;
+
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Sdlc']))
+		if(isset($_POST['Questions']))
 		{
-			$model->attributes=$_POST['Sdlc'];
+			$model->attributes=$_POST['Questions'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
-	public function actionStep1() //planning
-	{
-		$model=new Sdlc;
-            //die('hbdcgd ');
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['email']))
-		{
-                    
-                    $user= new User;
-                    $user->email=$_POST['email'];
-                    if($user->save()){
-                    Yii::app()->user->setState("state_name","value");
-                    $this->redirect(array('view','id'=>$model->id));
-                    }
-
-//			$model->attributes=$_POST['Sdlc'];
-//			if($model->save())
-//				$this->redirect(array('view','id'=>$model->id));
-		}
-
-		$this->render('step1',array(
-			'model'=>$model,'step'=>1,
-		));
-	}
-	public function actionStep2()//Analysis
-	{
-		$model=new Sdlc;
-            //die('hbdcgd ');
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Sdlc']))
-		{
-			$model->attributes=$_POST['Sdlc'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
-
-		$this->render('step2',array(
-			'model'=>$model,
-		));
-	}
-	public function actionStep3()
-	{
-		$model=new Sdlc;
-            //die('hbdcgd ');
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Sdlc']))
-		{
-			$model->attributes=$_POST['Sdlc'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
-
-		$this->render('step3',array(
-			'model'=>$model,
-		));
-	}
-	public function actionStep4()
-	{
-		$model=new Sdlc;
-            //die('hbdcgd ');
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Sdlc']))
-		{
-			$model->attributes=$_POST['Sdlc'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
-
-		$this->render('step4',array(
 			'model'=>$model,
 		));
 	}
@@ -171,9 +91,9 @@ class SdlcController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Sdlc']))
+		if(isset($_POST['Questions']))
 		{
-			$model->attributes=$_POST['Sdlc'];
+			$model->attributes=$_POST['Questions'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -182,9 +102,7 @@ class SdlcController extends Controller
 			'model'=>$model,
 		));
 	}
-        public function actionAddUser(){
-            
-        }
+
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -204,7 +122,7 @@ class SdlcController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Sdlc');
+		$dataProvider=new CActiveDataProvider('Questions');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -215,43 +133,26 @@ class SdlcController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Sdlc('search');
+		$model=new Questions('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Sdlc']))
-			$model->attributes=$_GET['Sdlc'];
+		if(isset($_GET['Questions']))
+			$model->attributes=$_GET['Questions'];
 
 		$this->render('admin',array(
 			'model'=>$model,
 		));
 	}
 
-        
-         public function actionTaskOne() {
-            $this->render('task1',array(
-			'model'=>'$model',
-		));
-        }
-         public function actionQuestion() {
-            $this->render('question',array(
-			'no'=>'ssd',
-		));
-        }
-        
-        
-        
-        
-        
-        
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Sdlc the loaded model
+	 * @return Questions the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Sdlc::model()->findByPk($id);
+		$model=Questions::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -259,16 +160,14 @@ class SdlcController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Sdlc $model the model to be validated
+	 * @param Questions $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='sdlc-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='questions-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
-        
-       
 }

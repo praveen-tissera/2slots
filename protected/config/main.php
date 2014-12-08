@@ -56,7 +56,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=db_sdlc',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'abc123',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		

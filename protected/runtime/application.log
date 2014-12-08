@@ -76,3 +76,155 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/sdlc/index.php/sdlc/step
 ---
+2014/12/07 07:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/assets/boo...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/assets/bootstrap.zip
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/step1
+---
+2014/12/07 07:25:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/assets/boo...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/assets/bootstrap.zip
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/step1
+---
+2014/12/07 18:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/action".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/acti...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/controller/action
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/step1
+---
+2014/12/07 18:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/action".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/acti...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/controller/action
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/step1
+---
+2014/12/07 18:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SldController/TaskOne".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('SldController/T...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/SldController/TaskOne
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/step1
+---
+2014/12/07 18:48:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SldController/TaskOne".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('SldController/T...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdlc/index.php/SldController/TaskOne
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/step1
+---
+2014/12/07 18:55:19 [error] [php] Undefined variable: model (D:\xampp\htdocs\sdlc\protected\controllers\SdlcController.php:231)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): SdlcController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SdlcController->filterAccessControl()
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(265): SdlcController->runActionWithFilters()
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SdlcController->run()
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\sdlc\index.php(13): CWebApplication->run()
+REQUEST_URI=/sdlc/index.php/sdlc/TaskOne
+in D:\xampp\htdocs\sdlc\protected\controllers\SdlcController.php (231)
+in D:\xampp\htdocs\sdlc\index.php (13)
+2014/12/07 19:49:36 [error] [exception.CException] exception 'CException' with message 'Property "Questions.findA" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('findA')
+#1 D:\xampp\htdocs\sdlc\protected\views\sdlc\question.php(3): CActiveRecord->__get('findA')
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('question', Array, true)
+#6 D:\xampp\htdocs\sdlc\protected\controllers\SdlcController.php(237): CController->render('question', Array)
+#7 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SdlcController->actionQuestion()
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('question')
+#17 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/question')
+#18 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/question
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/TaskOne
+---
+2014/12/07 19:56:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('question')
+#9 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/question')
+#10 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/question
+HTTP_REFERER=http://localhost/sdlc/index.php/sdlc/TaskOne
+---
+2014/12/07 19:56:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('question')
+#9 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/question')
+#10 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/question/1
+---
+2014/12/07 19:57:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('question')
+#9 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sdlc/question')
+#10 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\xampp\htdocs\sdlc\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sdlc/index.php/sdlc/question
+---
